@@ -53,3 +53,15 @@ function processPayroll(employee) {
         netPay: netPay
     };
 } 
+
+// Step 7: Loop through your employee array and log the payroll object for each employee.
+
+employees.forEach(employee => {
+    let payroll = processPayroll(employee);
+    console.log(`Payroll for ${payroll.name}:`);
+    console.log(`Base Pay: $${payroll.basePay.toFixed(2)}`);
+    console.log(`Overtime Pay: $${payroll.overtimePay.toFixed(2)}`);
+    console.log(`Gross Pay: $${payroll.grossPay.toFixed(2)}`);
+    console.log(`Net Pay (after taxes): $${payroll.netPay.toFixed(2)}`);
+    console.log('-----------------------------');
+});

@@ -16,3 +16,13 @@ function calculateBasePay(rate, hours) {
         return rate * 40; // Only pay for the first 40 hours
     }
 }
+
+
+// Step 4: Write calculateOvertimePay(rate, hours) that returns 1.5x rate for hours over 40.
+function calculateOvertimePay(rate, hours) {
+    if (hours > 40) {
+        return (hours - 40) * (rate * 1.5);
+    } else {
+        return 0; // No overtime pay if hours are 40 or less
+    }
+}

@@ -26,3 +26,8 @@ function calculateOvertimePay(rate, hours) {
         return 0; // No overtime pay if hours are 40 or less
     }
 }
+
+// Step 5: Write calculateTaxes(grossPay) that deducts 15% tax.
+function calculateTaxes(grossPay) {
+    return grossPay * 0.15; // 15% tax deduction
+}

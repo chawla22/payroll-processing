@@ -7,3 +7,12 @@ var employees = [
     { name: "Steven", hourlyRate: 28, hoursWorked: 36 }
 ];
 console.log("Employees:", employees);
+
+//Step 3: Write a function calculateBasePay(rate, hours) that returns pay for up to 40 hours only.
+function calculateBasePay(rate, hours) {
+    if (hours <= 40) {
+        return rate * hours;
+    } else {
+        return rate * 40; // Only pay for the first 40 hours
+    }
+}
